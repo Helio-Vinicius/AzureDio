@@ -1,0 +1,26 @@
+Passo a Passo para Implementar o Monitoramento
+1. Habilitar Diagnóstico nos Recursos
+- Acesse o recurso (ex: VM, App Service).
+- Vá em Configurações de Diagnóstico.
+- Ative a coleta de métricas e logs.
+- Direcione os dados para um workspace do Log Analytics.
+2. Configurar o Azure Monitor
+- No portal, vá em Monitor.
+- Use a aba Métricas para criar gráficos em tempo real.
+- Use a aba Logs para consultas com KQL.
+3. Ativar Application Insights (para apps)
+- No App Service, ative o Application Insights.
+- Ele coleta dados como tempo de resposta, falhas e dependências.
+- Crie alertas com base em anomalias ou falhas.
+4. Criar Alertas Inteligentes
+- Em Monitor > Alertas, clique em Nova Regra de Alerta.
+- Defina a condição (ex: CPU > 80%).
+- Configure a ação (ex: e-mail, webhook, runbook).
+5. Visualizar com Workbooks
+- Crie dashboards personalizados com Workbooks.
+- Combine métricas, logs e visualizações interativas.
+6. Monitorar Rede com Network Watcher
+- Ative o recurso e use ferramentas como:
+- Topology: visualiza a estrutura da rede.
+- Connection Monitor: verifica conectividade entre VMs.
+- NSG Flow Logs: analisa tráfego permitido/bloqueado.
