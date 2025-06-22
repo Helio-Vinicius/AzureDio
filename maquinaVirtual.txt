@@ -1,0 +1,25 @@
+ Etapas para implantar uma máquina virtual no Azure
+- Acesse o Portal do Azure
+- Vá para portal.azure.com e faça login com sua conta.
+- Crie um Grupo de Recursos
+- No menu lateral, clique em “Grupos de Recursos” e selecione “Criar”.
+- Dê um nome (ex: rg-producao) e escolha a região.
+- Crie a Máquina Virtual
+- Clique em “Criar um recurso” > “Computação” > “Máquina Virtual”.
+- Preencha os campos:
+- Nome da VM
+- Região
+- Imagem (ex: Ubuntu, Windows Server)
+- Tamanho (ex: B2s, D2s_v3)
+- Autenticação (senha ou chave SSH)
+- Configuração de Rede
+- O Azure criará uma VNet e Subnet por padrão, mas você pode personalizar.
+- Configure o IP público e o grupo de segurança de rede (NSG) para liberar portas como 22 (SSH) ou 3389 (RDP).
+- Discos e Armazenamento
+- Escolha entre SSD padrão, premium ou HDD.
+- Você pode adicionar discos de dados posteriormente.
+- Revisar e Criar
+- Revise todas as configurações e clique em “Criar”.
+- O Azure provisionará a VM em poucos minutos.
+- Acesso à VM
+- Use SSH (Linux) ou RDP (Windows) com o IP público fornecido.

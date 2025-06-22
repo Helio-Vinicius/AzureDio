@@ -1,0 +1,17 @@
+ Desanexar um disco de dados no Portal do Azure
+1. 	Acesse o Portal do Azure
+• 	Vá para portal.azure.com e faça login.
+2. 	Selecione a Máquina Virtual
+• 	No menu lateral, clique em Máquinas Virtuais e escolha a VM da qual deseja remover o disco.
+3. 	Acesse a Configuração de Discos
+• 	No menu da VM, clique em Discos.
+4. 	Desanexar o Disco
+• 	Localize o disco de dados (não o disco do sistema operacional).
+• 	Clique no ícone de lixeira ou Desanexar ao lado do disco.
+• 	Clique em Salvar no topo da página.
+
+ Desanexar via PowerShell (Azure Cloud Shell)
+
+$vm = Get-AzVM -ResourceGroupName "meuGrupo" -Name "minhaVM"
+Remove-AzVMDataDisk -VM $vm -Name "meuDisco"
+Update-AzVM -ResourceGroupName "meuGrupo" -VM $vm
